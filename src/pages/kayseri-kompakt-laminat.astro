@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Slider from '../components/Slider.astro'; 
 import CTAButtons from '../components/CTAButtons.astro';
 
 const phoneNumber = '+90 352 441 02 09';
@@ -51,11 +52,17 @@ const description = 'Kayseri\'nin en güvenilir kompakt laminat WC kabini üreti
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold text-gray-900 mb-4">
-          Neden OZSO Kayseri?
+          Neden ÖZSOY YAPI METAL?
         </h2>
-        <p class="text-xl text-gray-600">
+        <p class="text-xl text-gray-600 mb-4">
           Kayseri'de kompakt laminat WC kabini üretiminde lider firma
         </p>
+        <a href="/hakkimizda" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold transition-colors">
+          Firmamız hakkında bilgi edinmek için tıklayın
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -64,7 +71,7 @@ const description = 'Kayseri\'nin en güvenilir kompakt laminat WC kabini üreti
           <div class="text-5xl mb-4">🏭</div>
           <h3 class="text-xl font-bold text-gray-900 mb-2">Kayseri'de Üretim</h3>
           <p class="text-gray-600">
-            Modern tesisimiz Kayseri'de. Yerli üretim, fabrika fiyatları.
+            Modern tesisimiz Kayseri'de bulunmaktadır. Aksesuarlarımız yerli üretim, uygun fiyatlar.
           </p>
         </div>
 
@@ -73,16 +80,16 @@ const description = 'Kayseri\'nin en güvenilir kompakt laminat WC kabini üreti
           <div class="text-5xl mb-4">🚚</div>
           <h3 class="text-xl font-bold text-gray-900 mb-2">Hızlı Teslimat</h3>
           <p class="text-gray-600">
-            Kayseri merkez ve ilçelere aynı gün teslimat imkanı.
+            Kayseri merkez ve ilçelere hızlı teslimat imkanı.
           </p>
         </div>
 
         <!-- Local Team -->
         <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
           <div class="text-5xl mb-4">👷</div>
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Yerel Montaj Ekibi</h3>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Projenize hayat veriyoruz</h3>
           <p class="text-gray-600">
-            Kayseri'deki deneyimli montaj ekibimiz hızlı kurulum sağlar.
+            Prorejinizi gönderin, montaja hazır şekilde kesimini yapalım. Siz dilerseniz deneyimli montaj ekibimiz hızlı kurulum sağlar.
           </p>
         </div>
 
@@ -91,12 +98,14 @@ const description = 'Kayseri\'nin en güvenilir kompakt laminat WC kabini üreti
           <div class="text-5xl mb-4">⭐</div>
           <h3 class="text-xl font-bold text-gray-900 mb-2">15+ Yıl Deneyim</h3>
           <p class="text-gray-600">
-            Kayseri'de yüzlerce başarılı proje referansımız var.
+            Kayseri'de ve Türkiye genelinde yüzlerce başarılı proje referansımız var.
           </p>
         </div>
       </div>
     </div>
   </section>
+
+  <Slider />
 
   <!-- Products Section -->
   <section class="py-20 bg-gray-50">
@@ -110,7 +119,7 @@ const description = 'Kayseri\'nin en güvenilir kompakt laminat WC kabini üreti
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         <!-- Standard -->
         <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
           <div class="p-8">
@@ -174,86 +183,6 @@ const description = 'Kayseri\'nin en güvenilir kompakt laminat WC kabini üreti
               </li>
             </ul>
           </div>
-        </div>
-
-        <!-- Custom -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-          <div class="p-8">
-            <div class="text-4xl mb-4">🎨</div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Özel Tasarım</h3>
-            <p class="text-gray-600 mb-6">
-              Projenize özel tasarlanmış kompakt laminat WC kabinleri. Kayseri'deki mimari projelere tam uyum.
-            </p>
-            <ul class="space-y-2 text-gray-600">
-              <li class="flex items-start">
-                <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                Özel ölçüler
-              </li>
-              <li class="flex items-start">
-                <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                Sınırsız renk ve doku
-              </li>
-              <li class="flex items-start">
-                <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                Mimari projelere uyum
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Service Areas -->
-  <section class="py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">
-          Hizmet Verdiğimiz Bölgeler
-        </h2>
-        <p class="text-xl text-gray-600">
-          Kayseri'nin her noktasına kompakt laminat WC kabini üretim ve montaj hizmeti
-        </p>
-      </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
-          <div class="text-3xl mb-2">📍</div>
-          <h3 class="font-semibold text-gray-900">Melikgazi</h3>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
-          <div class="text-3xl mb-2">📍</div>
-          <h3 class="font-semibold text-gray-900">Kocasinan</h3>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
-          <div class="text-3xl mb-2">📍</div>
-          <h3 class="font-semibold text-gray-900">Talas</h3>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
-          <div class="text-3xl mb-2">📍</div>
-          <h3 class="font-semibold text-gray-900">Hacılar</h3>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
-          <div class="text-3xl mb-2">📍</div>
-          <h3 class="font-semibold text-gray-900">İncesu</h3>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
-          <div class="text-3xl mb-2">📍</div>
-          <h3 class="font-semibold text-gray-900">Develi</h3>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
-          <div class="text-3xl mb-2">📍</div>
-          <h3 class="font-semibold text-gray-900">Bünyan</h3>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
-          <div class="text-3xl mb-2">📍</div>
-          <h3 class="font-semibold text-gray-900">Yeşilhisar</h3>
         </div>
       </div>
     </div>
