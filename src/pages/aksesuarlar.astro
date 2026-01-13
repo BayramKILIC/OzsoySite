@@ -1,0 +1,305 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CTAButtons from '../components/CTAButtons.astro';
+
+const phoneNumber = '+90 533 403 90 96';
+const whatsappNumber = '905334039096';
+
+const accessories = [
+  {
+    category: 'Menteşe ve Bağlantı Elemanları',
+    items: [
+      'Paslanmaz çelik menteşeler',
+      'Alüminyum profiller',
+      'Kapı kilitleri',
+      'Sabitleme elemanları'
+    ]
+  },
+  {
+    category: 'Tuvalet Kağıdı Dispenserleri',
+    items: [
+      'Jumbo rulo dispenseri',
+      'Standart rulo dispenseri',
+      'Paslanmaz çelik modeller',
+      'Antibakteriyel kaplamalar'
+    ]
+  },
+  {
+    category: 'Sabunluk ve Hijyen Ürünleri',
+    items: [
+      'Sıvı sabun dispenserleri',
+      'Kağıt havlu makineleri',
+      'Çöp kovası sistemleri',
+      'El kurutma makineleri'
+    ]
+  },
+  {
+    category: 'Askı ve Raflar',
+    items: [
+      'Çanta askıları',
+      'Havlu askıları',
+      'Raf sistemleri',
+      'Ayna ve çerçeveler'
+    ]
+  },
+  {
+    category: 'Kapı Sistemi Aksesuarları',
+    items: [
+      'Kapı stoperleri',
+      'Otomatik kapanma mekanizması',
+      'Gizlilik kilitleri',
+      'Meşguliyet göstergesi'
+    ]
+  },
+  {
+    category: 'Ayak ve Destek Elemanları',
+    items: [
+      'Ayarlanabilir ayaklar',
+      'Tavan montaj bağlantıları',
+      'Sabitleyici dirsekler',
+      'Köşe bağlantıları'
+    ]
+  }
+];
+
+const benefits = [
+  {
+    icon: '🔧',
+    title: 'Kolay Montaj',
+    description: 'Tüm aksesuarlarımız kolay montaj için tasarlanmıştır'
+  },
+  {
+    icon: '💪',
+    title: 'Dayanıklı Malzeme',
+    description: 'Paslanmaz çelik ve yüksek kalite plastik malzemeler'
+  },
+  {
+    icon: '🛡️',
+    title: 'Uzun Ömürlü',
+    description: 'Yoğun kullanıma uygun, uzun ömürlü ürünler'
+  },
+  {
+    icon: '🎨',
+    title: 'Renk Seçenekleri',
+    description: 'Kabin rengine uyumlu geniş renk yelpazesi'
+  }
+];
+---
+
+<Layout 
+  title="WC Kabin Aksesuarları - Kayseri | Ozso"
+  description="WC kabini için tüm aksesuar ihtiyacınız: menteşe, kilit, dispenser, sabunluk, askı sistemleri. B2B toplu satış, özel fiyat teklifleri."
+  keywords="wc kabin aksesuarları, menteşe, dispenser, sabunluk, kilit, askı, tuvalet kağıdı dispenseri, Kayseri"
+>
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-primary-600 text-white py-20 md:py-28">
+      <div class="section-container">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            WC Kabin Aksesuarları
+            <span class="block text-primary-200 mt-2">Komple Çözümler</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-primary-100 mb-8">
+            WC kabinleriniz için ihtiyacınız olan tüm aksesuarlar. Yüksek kalite, uygun fiyat, hızlı teslimat.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <a 
+              href={`tel:${phoneNumber}`}
+              onclick="trackPhoneClick()"
+              class="bg-white text-primary-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-50 transition-colors inline-flex items-center justify-center gap-3 shadow-lg"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              Fiyat Teklifi Alın
+            </a>
+            <a 
+              href={`https://wa.me/${whatsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="trackWhatsAppClick()"
+              class="bg-green-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-600 transition-colors inline-flex items-center justify-center gap-3 shadow-lg"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 md:py-20 bg-gray-50">
+      <div class="section-container">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Aksesuarlarımızın Avantajları
+          </h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {benefits.map((benefit) => (
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow text-center">
+              <div class="text-5xl mb-4">{benefit.icon}</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">{benefit.title}</h3>
+              <p class="text-gray-600">{benefit.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessories Categories -->
+    <section class="py-16 md:py-24">
+      <div class="section-container">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Aksesuar Kategorilerimiz
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            WC kabinleriniz için ihtiyacınız olan her şey tek çatı altında
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {accessories.map((category) => (
+            <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-primary-500 hover:shadow-lg transition-all">
+              <div class="h-32 bg-gradient-to-br from-primary-100 to-primary-200 rounded-lg mb-6 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">{category.category}</h3>
+              <ul class="space-y-2">
+                {category.items.map((item) => (
+                  <li class="flex items-start gap-2 text-gray-700">
+                    <svg class="h-5 w-5 text-primary-600 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Package Deals Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+      <div class="section-container">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8 md:p-12">
+          <div class="text-center mb-8">
+            <div class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-semibold mb-4">
+              💰 Toplu Alım Avantajı
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Komple Paket Fiyatları
+            </h2>
+            <p class="text-xl text-gray-600">
+              WC kabini + aksesuarlar için özel paket fiyatlarımızdan yararlanın
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-gray-50 p-6 rounded-xl">
+              <div class="text-center">
+                <div class="text-3xl font-bold text-primary-600 mb-2">%15</div>
+                <div class="text-gray-700 font-semibold">İndirim</div>
+                <div class="text-sm text-gray-500 mt-1">Komple paketlerde</div>
+              </div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl">
+              <div class="text-center">
+                <div class="text-3xl font-bold text-primary-600 mb-2">🚚</div>
+                <div class="text-gray-700 font-semibold">Ücretsiz Kargo</div>
+                <div class="text-sm text-gray-500 mt-1">Toplu alımlarda</div>
+              </div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl">
+              <div class="text-center">
+                <div class="text-3xl font-bold text-primary-600 mb-2">🎁</div>
+                <div class="text-gray-700 font-semibold">Bonus Ürünler</div>
+                <div class="text-sm text-gray-500 mt-1">Büyük siparişlerde</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center">
+            <p class="text-gray-700 mb-6">
+              Projenizin detaylarını paylaşın, size özel fiyat teklifi hazırlayalım
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href={`tel:${phoneNumber}`}
+                onclick="trackPhoneClick()"
+                class="bg-primary-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-700 transition-colors inline-flex items-center justify-center gap-3"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+                Hemen Arayın
+              </a>
+              <a 
+                href={`https://wa.me/${whatsappNumber}?text=Merhaba, WC kabin aksesuarları hakkında bilgi almak istiyorum.`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="trackWhatsAppClick()"
+                class="bg-green-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-600 transition-colors inline-flex items-center justify-center gap-3"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality Guarantee -->
+    <section class="py-16 bg-white">
+      <div class="section-container">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            🏆 Kalite Garantisi
+          </h2>
+          <p class="text-lg text-gray-600 mb-8">
+            Tüm aksesuarlarımız CE sertifikalıdır ve yüksek kalite standartlarına uygun üretilmektedir. Yoğun kullanıma uygun, dayanıklı malzemeler kullanıyoruz.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="flex flex-col items-center">
+              <div class="text-4xl mb-2">✅</div>
+              <div class="font-semibold text-gray-800">CE Sertifikalı</div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="text-4xl mb-2">🔒</div>
+              <div class="font-semibold text-gray-800">2 Yıl Garanti</div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="text-4xl mb-2">🇹🇷</div>
+              <div class="font-semibold text-gray-800">Yerli Üretim</div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="text-4xl mb-2">💯</div>
+              <div class="font-semibold text-gray-800">%100 Orijinal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <CTAButtons />
+  <Footer />
+</Layout>
