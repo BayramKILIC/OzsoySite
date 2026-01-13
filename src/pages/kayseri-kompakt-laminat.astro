@@ -1,0 +1,342 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CTAButtons from '../components/CTAButtons.astro';
+
+const phoneNumber = '+90 352 441 02 09';
+const whatsappNumber = '905555555555';
+
+const title = 'Kayseri Kompakt Laminat WC Kabinleri | OZSO - Yerel Üretici';
+const description = 'Kayseri\'nin en güvenilir kompakt laminat WC kabini üreticisi. Modern üretim tesisimizle Kayseri ve çevresine hızlı teslimat. Fabrika fiyatlarıyla kaliteli WC kabinleri.';
+---
+
+<Layout title={title} description={description}>
+  <Header />
+  
+  <!-- Hero Section - Kayseri Focused -->
+  <section class="relative bg-primary-600 text-white py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <div class="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-semibold mb-4">
+          📍 Kayseri'de Üretim ve Montaj
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Kayseri Kompakt Laminat<br/>WC Kabinleri
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-white/90">
+          Kayseri'nin En Güvenilir Kompakt Laminat Üreticisi<br/>
+          Fabrika Fiyatları • Hızlı Teslimat • Profesyonel Montaj
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href={`tel:${phoneNumber}`} class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            Hemen Arayın
+          </a>
+          <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors">
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us - Kayseri Advantages -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">
+          Neden OZSO Kayseri?
+        </h2>
+        <p class="text-xl text-gray-600">
+          Kayseri'de kompakt laminat WC kabini üretiminde lider firma
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Local Production -->
+        <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="text-5xl mb-4">🏭</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Kayseri'de Üretim</h3>
+          <p class="text-gray-600">
+            Modern tesisimiz Kayseri'de. Yerli üretim, fabrika fiyatları.
+          </p>
+        </div>
+
+        <!-- Fast Delivery -->
+        <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="text-5xl mb-4">🚚</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Hızlı Teslimat</h3>
+          <p class="text-gray-600">
+            Kayseri merkez ve ilçelere aynı gün teslimat imkanı.
+          </p>
+        </div>
+
+        <!-- Local Team -->
+        <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="text-5xl mb-4">👷</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Yerel Montaj Ekibi</h3>
+          <p class="text-gray-600">
+            Kayseri'deki deneyimli montaj ekibimiz hızlı kurulum sağlar.
+          </p>
+        </div>
+
+        <!-- Experience -->
+        <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="text-5xl mb-4">⭐</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">15+ Yıl Deneyim</h3>
+          <p class="text-gray-600">
+            Kayseri'de yüzlerce başarılı proje referansımız var.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">
+          Kompakt Laminat WC Kabin Çözümlerimiz
+        </h2>
+        <p class="text-xl text-gray-600">
+          Kayseri'deki her projeye uygun kaliteli kompakt laminat kabinler
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Standard -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+          <div class="p-8">
+            <div class="text-4xl mb-4">🚪</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Standart Kabinler</h3>
+            <p class="text-gray-600 mb-6">
+              Alışveriş merkezleri, ofisler, fabrikalar için ideal kompakt laminat WC kabinleri. Kayseri'deki projelerde en çok tercih edilen model.
+            </p>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                12mm kompakt laminat
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Su ve nem direnci
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Paslanmaz aksesuarlar
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Premium -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border-2 border-primary-600">
+          <div class="bg-primary-600 text-white text-center py-2 font-semibold">
+            ⭐ En Popüler
+          </div>
+          <div class="p-8">
+            <div class="text-4xl mb-4">✨</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Premium Kabinler</h3>
+            <p class="text-gray-600 mb-6">
+              Oteller, restoranlar, lüks projeler için tasarlanmış kompakt laminat WC kabinleri. Kayseri'nin prestijli mekanlarında kullanılıyor.
+            </p>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                18mm kompakt laminat
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Özel renk seçenekleri
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Premium aksesuarlar
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Custom -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+          <div class="p-8">
+            <div class="text-4xl mb-4">🎨</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Özel Tasarım</h3>
+            <p class="text-gray-600 mb-6">
+              Projenize özel tasarlanmış kompakt laminat WC kabinleri. Kayseri'deki mimari projelere tam uyum.
+            </p>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Özel ölçüler
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Sınırsız renk ve doku
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Mimari projelere uyum
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">
+          Hizmet Verdiğimiz Bölgeler
+        </h2>
+        <p class="text-xl text-gray-600">
+          Kayseri'nin her noktasına kompakt laminat WC kabini üretim ve montaj hizmeti
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
+          <div class="text-3xl mb-2">📍</div>
+          <h3 class="font-semibold text-gray-900">Melikgazi</h3>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
+          <div class="text-3xl mb-2">📍</div>
+          <h3 class="font-semibold text-gray-900">Kocasinan</h3>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
+          <div class="text-3xl mb-2">📍</div>
+          <h3 class="font-semibold text-gray-900">Talas</h3>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
+          <div class="text-3xl mb-2">📍</div>
+          <h3 class="font-semibold text-gray-900">Hacılar</h3>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
+          <div class="text-3xl mb-2">📍</div>
+          <h3 class="font-semibold text-gray-900">İncesu</h3>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
+          <div class="text-3xl mb-2">📍</div>
+          <h3 class="font-semibold text-gray-900">Develi</h3>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
+          <div class="text-3xl mb-2">📍</div>
+          <h3 class="font-semibold text-gray-900">Bünyan</h3>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-shadow">
+          <div class="text-3xl mb-2">📍</div>
+          <h3 class="font-semibold text-gray-900">Yeşilhisar</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">
+          Sık Sorulan Sorular
+        </h2>
+        <p class="text-xl text-gray-600">
+          Kayseri kompakt laminat WC kabinleri hakkında merak edilenler
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        <!-- Question 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            Kayseri'de kompakt laminat WC kabini fiyatları ne kadar?
+          </h3>
+          <p class="text-gray-600">
+            Fiyatlar projenizin büyüklüğüne, seçeceğiniz kompakt laminat kalınlığına ve aksesuarlara göre değişir. Kayseri'de fabrika fiyatlarıyla üretim yaptığımız için en uygun fiyatları sunuyoruz. Ücretsiz keşif ve fiyat teklifi için bizi arayın.
+          </p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            Montaj süresi ne kadar?
+          </h3>
+          <p class="text-gray-600">
+            Kayseri'deki standart bir proje için (10-15 kabin) montaj süresi genellikle 1-2 gündür. Yerel montaj ekibimiz sayesinde hızlı ve profesyonel kurulum garantisi veriyoruz.
+          </p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            Garanti veriyor musunuz?
+          </h3>
+          <p class="text-gray-600">
+            Evet, tüm kompakt laminat WC kabinlerimiz için 5 yıl üretici garantisi veriyoruz. Kayseri'de yerel üretici olduğumuz için garanti süresince servis desteği de sağlıyoruz.
+          </p>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            Kompakt laminat neden tercih edilmeli?
+          </h3>
+          <p class="text-gray-600">
+            Kompakt laminat su, nem, darbe ve kimyasallara karşı son derece dayanıklıdır. Hijyenik, kolay temizlenir ve uzun ömürlüdür. Kayseri'nin iklim koşullarına mükemmel uyum sağlar. Özellikle yoğun kullanılan alanlarda (AVM, hastane, okul) ideal çözümdür.
+          </p>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">
+            Kayseri dışına da hizmet veriyor musunuz?
+          </h3>
+          <p class="text-gray-600">
+            Evet, Kayseri çevresindeki tüm illere (Nevşehir, Sivas, Niğde, Yozgat) kompakt laminat WC kabini üretim ve montaj hizmeti veriyoruz. Ana üretim merkezimiz Kayseri'de olduğu için bu bölgelere de hızlı teslimat sağlıyoruz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-primary-600 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-bold mb-6">
+        Kayseri'de Kompakt Laminat WC Kabini İhtiyacınız için Hemen İletişime Geçin
+      </h2>
+      <p class="text-xl mb-8 text-white/90">
+        Ücretsiz keşif ve fiyat teklifi için bugün arayın
+      </p>
+      <CTAButtons />
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
