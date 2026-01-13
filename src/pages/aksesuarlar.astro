@@ -7,63 +7,6 @@ import CTAButtons from '../components/CTAButtons.astro';
 const phoneNumber = '+90 533 403 90 96';
 const whatsappNumber = '905334039096';
 
-const accessories = [
-  {
-    category: 'Menteşe ve Bağlantı Elemanları',
-    items: [
-      'Paslanmaz çelik menteşeler',
-      'Alüminyum profiller',
-      'Kapı kilitleri',
-      'Sabitleme elemanları'
-    ]
-  },
-  {
-    category: 'Tuvalet Kağıdı Dispenserleri',
-    items: [
-      'Jumbo rulo dispenseri',
-      'Standart rulo dispenseri',
-      'Paslanmaz çelik modeller',
-      'Antibakteriyel kaplamalar'
-    ]
-  },
-  {
-    category: 'Sabunluk ve Hijyen Ürünleri',
-    items: [
-      'Sıvı sabun dispenserleri',
-      'Kağıt havlu makineleri',
-      'Çöp kovası sistemleri',
-      'El kurutma makineleri'
-    ]
-  },
-  {
-    category: 'Askı ve Raflar',
-    items: [
-      'Çanta askıları',
-      'Havlu askıları',
-      'Raf sistemleri',
-      'Ayna ve çerçeveler'
-    ]
-  },
-  {
-    category: 'Kapı Sistemi Aksesuarları',
-    items: [
-      'Kapı stoperleri',
-      'Otomatik kapanma mekanizması',
-      'Gizlilik kilitleri',
-      'Meşguliyet göstergesi'
-    ]
-  },
-  {
-    category: 'Ayak ve Destek Elemanları',
-    items: [
-      'Ayarlanabilir ayaklar',
-      'Tavan montaj bağlantıları',
-      'Sabitleyici dirsekler',
-      'Köşe bağlantıları'
-    ]
-  }
-];
-
 const benefits = [
   {
     icon: '🔧',
@@ -162,35 +105,86 @@ const benefits = [
       <div class="section-container">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Aksesuar Kategorilerimiz
+            Kabin Aksesuarlarımız
           </h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
             WC kabinleriniz için ihtiyacınız olan her şey tek çatı altında
           </p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {accessories.map((category) => (
-            <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-primary-500 hover:shadow-lg transition-all">
-              <div class="h-32 bg-gradient-to-br from-primary-100 to-primary-200 rounded-lg mb-6 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4">{category.category}</h3>
-              <ul class="space-y-2">
-                {category.items.map((item) => (
-                  <li class="flex items-start gap-2 text-gray-700">
-                    <svg class="h-5 w-5 text-primary-600 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                    </svg>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- Catégorie 1 -->
+  <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all">
+    <img 
+      src="/images/aksesuar1.jpg" 
+      alt="Kabin Menteşe" 
+      class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-300"
+    >
+    <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+      <h3 class="text-xl font-bold text-white">Menteşe ve Bağlantı</h3>
+    </div>
+  </div>
+
+  <!-- Catégorie 2 -->
+  <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all">
+    <img 
+      src="/images/aksesuar2.jpg" 
+      alt="kabin mandallı kilit" 
+      class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-300"
+    >
+    <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+      <h3 class="text-xl font-bold text-white">Mandallı kilit</h3>
+    </div>
+  </div>
+
+  <!-- Catégorie 3 -->
+  <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all">
+    <img 
+      src="/images/aksesuar3.jpg" 
+      alt="Sabunluk ve Hijyen Ürünleri" 
+      class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-300"
+    >
+    <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+      <h3 class="text-xl font-bold text-white">Hijyen Ürünleri</h3>
+    </div>
+  </div>
+
+  <!-- Catégorie 4 -->
+  <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all">
+    <img 
+      src="/images/aksesuar4.jpg" 
+      alt="Askı ve Raflar" 
+      class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-300"
+    >
+    <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+      <h3 class="text-xl font-bold text-white">Askı ve Raflar</h3>
+    </div>
+  </div>
+
+  <!-- Catégorie 5 -->
+  <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all">
+    <img 
+      src="/images/aksesuar5.jpg" 
+      alt="Kapı Sistemi Aksesuarları" 
+      class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-300"
+    >
+    <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+      <h3 class="text-xl font-bold text-white">Kapı Sistemleri</h3>
+    </div>
+  </div>
+
+  <!-- Catégorie 6 -->
+  <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all">
+    <img 
+      src="/images/aksesuar6.jpg" 
+      alt="Ayak ve Destek Elemanları" 
+      class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-300"
+    >
+    <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+      <h3 class="text-xl font-bold text-white">Ayak ve Destek</h3>
+    </div>
+  </div>
+</div>
       </div>
     </section>
 
