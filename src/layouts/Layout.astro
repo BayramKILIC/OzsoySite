@@ -8,12 +8,17 @@ interface Props {
   ogImage?: string;
 }
 
-const { title, description, keywords, ogImage = '/og-image.jpg' } = Astro.props;
+const { title, description, keywords, ogImage } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
+// Image Open Graph - URL complète
+const fullOgImage = ogImage 
+  ? new URL(ogImage, Astro.site).toString() 
+  : new URL('/images/fabrika.jpg', Astro.site).toString();
+
 // Numéros de contact
-const phoneNumber = '+90 533 403 90 96'; 
-const whatsappNumber = '905334039096';
+const phoneNumber = '+90 535 104 90 52'; 
+const whatsappNumber = '905351049052';
 ---
 
 <!doctype html>
@@ -34,14 +39,14 @@ const whatsappNumber = '905334039096';
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImage} />
+    <meta property="og:image" content={fullOgImage} />
     <meta property="og:locale" content="tr_TR" />
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image" content={fullOgImage} />
     
     <!-- Schema.org LocalBusiness -->
     <script type="application/ld+json">
@@ -55,20 +60,22 @@ const whatsappNumber = '905334039096';
           "addressLocality": "Kayseri",
           "addressCountry": "TR"
         },
-        "telephone": "+90 533 403 90 96",
+        "telephone": "+90 535 104 90 52",
         "priceRange": "$$",
-        "image": "https://ozso.com.tr/og-image.jpg"
+        "image": "https://wcbolmeleri.com/images/fabrika.jpg",
+        "url": "https://wcbolmeleri.com"
       }
     </script>
     
-    <!-- Google Tag Manager (GTM) - À CONFIGURER -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-XXXXXXXXX');
-    </script> -->
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTVBNW1ZQY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTVBNW1ZQY');
+</script>
     
     <!-- Event Tracking Functions -->
     <script is:inline>
